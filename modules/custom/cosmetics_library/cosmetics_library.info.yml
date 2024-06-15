@@ -1,0 +1,5 @@
+name: 'Cosmetics Library'
+type: module
+description: 'Managment of common functionalities'
+core_version_requirement: ^9 || ^10
+package: Custom

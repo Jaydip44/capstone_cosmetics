@@ -1,0 +1,12 @@
+<?php
+
+/**
+ * Implements hook_menu_link_alter().
+ */
+function cosmetics_library_menu_link_alter(&$item) {
+  // Check if the menu link is not for the home page or login page.
+  if ($item['link_path'] !== '<front>' && $item['link_path'] !== 'user/login') {
+    // Disable the menu link.
+    $item['enabled'] = FALSE;
+  }
+}

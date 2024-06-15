@@ -1,0 +1,11 @@
+uuid: 7a9a6f58-b883-477f-abcc-318f1280944d
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.middle_slider
+id: node.middle_slider
+target_entity_type_id: node
+target_bundle: middle_slider
+default_langcode: site_default
+language_alterable: false

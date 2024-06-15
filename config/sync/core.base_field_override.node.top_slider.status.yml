@@ -1,0 +1,22 @@
+uuid: 42e0734a-183e-4d13-affe-69ac4f11bdcb
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - node.type.top_slider
+id: node.top_slider.status
+field_name: status
+entity_type: node
+bundle: top_slider
+label: Published
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

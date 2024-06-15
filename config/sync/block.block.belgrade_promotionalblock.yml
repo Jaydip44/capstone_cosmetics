@@ -1,0 +1,30 @@
+uuid: d7bb97ca-7210-467a-bf93-73546e02b482
+langcode: en-gb
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:05ccbc92-f0a6-4764-9872-06923f42bf10'
+  module:
+    - block_content
+    - system
+  theme:
+    - belgrade
+id: belgrade_promotionalblock
+theme: belgrade
+region: content
+weight: -4
+provider: null
+plugin: 'block_content:05ccbc92-f0a6-4764-9872-06923f42bf10'
+settings:
+  id: 'block_content:05ccbc92-f0a6-4764-9872-06923f42bf10'
+  label: 'Promotional block'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

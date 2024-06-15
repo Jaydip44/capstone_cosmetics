@@ -1,0 +1,29 @@
+uuid: 22d0e807-e5a5-4e05-8aa5-a8107bb81b7e
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - views.view.middle_slider
+  module:
+    - system
+    - views
+  theme:
+    - belgrade
+id: belgrade_views_block__middle_slider_block_1
+theme: belgrade
+region: content
+weight: -5
+provider: null
+plugin: 'views_block:middle_slider-block_1'
+settings:
+  id: 'views_block:middle_slider-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

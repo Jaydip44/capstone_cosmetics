@@ -1,0 +1,11 @@
+uuid: 22981fb0-9449-44c8-8ef5-4f4c703b804a
+langcode: en-gb
+status: true
+dependencies:
+  module:
+    - commerce_product
+id: commerce_product.product
+label: Product
+description: ''
+targetEntityType: commerce_product
+cache: true
