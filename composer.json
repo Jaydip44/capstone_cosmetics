@@ -25,7 +25,6 @@
         "drupal/core-recommended": "^10.2",
         "drupal/core-vendor-hardening": "^10.2",
         "drupal/inline_entity_form": "3.x-dev@dev",
-        "drupal/slick_views": "^3.0",
         "drupal/views_slideshow": "^5.0"
     },
     "conflict": {

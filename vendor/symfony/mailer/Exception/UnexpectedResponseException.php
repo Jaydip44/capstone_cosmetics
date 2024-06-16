@@ -9,12 +9,8 @@
  * file that was distributed with this source code.
  */
 
-namespace Symfony\Contracts\Translation;
+namespace Symfony\Component\Mailer\Exception;
 
-/**
- * @author Nicolas Grekas <p@tchwork.com>
- */
-interface TranslatableInterface
+class UnexpectedResponseException extends TransportException
 {
-    public function trans(TranslatorInterface $translator, ?string $locale = null): string;
 }
