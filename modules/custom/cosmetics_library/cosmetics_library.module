@@ -1,12 +1,24 @@
 <?php
 
 /**
- * Implements hook_menu_link_alter().
+ * @file
  */
-function cosmetics_library_menu_link_alter(&$item) {
-  // Check if the menu link is not for the home page or login page.
-  if ($item['link_path'] !== '<front>' && $item['link_path'] !== 'user/login') {
-    // Disable the menu link.
-    $item['enabled'] = FALSE;
+
+ /**
+  * Implements hook_page_attachments().
+  */
+function cosmetics_library_page_attachments(array &$attachments) {
+  $current_path = \Drupal::service('path.current')->getPath();
+  $allowed_paths = [
+    '/node',
+    '/user/login',
+
+  ];
+
+  if (\Drupal::currentUser()->isAnonymous()) {
+    if (!in_array($current_path, $allowed_paths)) {
+      print "<h1>Page under construction..</h1>";
+      exit;
+    }
   }
 }
