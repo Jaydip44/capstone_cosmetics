@@ -17,6 +17,7 @@
     "require": {
         "composer/installers": "^2.0",
         "drupal/admin_toolbar": "^3.4",
+        "drupal/asset_injector": "^2.20",
         "drupal/belgrade": "^2.0",
         "drupal/block_class": "^2.0",
         "drupal/commerce": "^2.39",
@@ -25,6 +26,7 @@
         "drupal/core-recommended": "^10.2",
         "drupal/core-vendor-hardening": "^10.2",
         "drupal/inline_entity_form": "3.x-dev@dev",
+        "drupal/token": "^1.14",
         "drupal/views_slideshow": "^5.0"
     },
     "conflict": {
