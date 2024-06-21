@@ -2,9 +2,6 @@ name: Tour
 type: module
 description: 'Displays guided tours of the site interface.'
 package: Core
-# version: VERSION
-
-# Information added by Drupal.org packaging script on 2024-02-07
-version: '10.2.3'
-project: 'drupal'
-datestamp: 1707347743
+lifecycle: deprecated
+lifecycle_link: https://www.drupal.org/docs/core-modules-and-themes/deprecated-and-obsolete-modules-and-themes#s-tour
+version: VERSION
