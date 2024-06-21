@@ -1,6 +1,5 @@
 _core:
   default_config_hash: CjkQ-xZe9_McsEpYCGrmpr06sthpEoZ1TwIF3xozEbg
-langcode: en-gb
 favicon:
   use_default: true
 features:

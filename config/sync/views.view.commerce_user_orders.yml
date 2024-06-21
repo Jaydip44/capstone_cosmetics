@@ -384,6 +384,7 @@ display:
             offset: false
             offset_label: Offset
           quantity: 9
+          pagination_heading_level: h4
       exposed_form:
         type: basic
         options:
@@ -426,7 +427,7 @@ display:
           admin_label: ''
           entity_type: commerce_order
           entity_field: uid
-          plugin_id: numeric
+          plugin_id: entity_target_id
           default_action: 'not found'
           exception:
             value: all
@@ -454,6 +455,7 @@ display:
             admin_permission: 'view commerce_order'
           break_phrase: false
           not: false
+          target_entity_type_id: user
       filters:
         state:
           id: state
