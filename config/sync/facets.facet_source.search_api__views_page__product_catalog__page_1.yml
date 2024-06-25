@@ -1,0 +1,12 @@
+uuid: 70b91ff1-533c-4962-808b-c55463856c41
+langcode: en-gb
+status: true
+dependencies: {  }
+id: search_api__views_page__product_catalog__page_1
+name: 'search_api:views_page__product_catalog__page_1'
+filter_key: ''
+url_processor: query_string
+breadcrumb:
+  active: false
+  before: true
+  group: false

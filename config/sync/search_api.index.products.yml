@@ -1,0 +1,137 @@
+uuid: a148ac7f-25ee-4c36-b486-145b5b50e6ab
+langcode: en-gb
+status: true
+dependencies:
+  config:
+    - field.storage.commerce_product.field_brand
+    - field.storage.commerce_product.field_product_categories
+    - field.storage.commerce_product.field_image
+    - search_api.server.database_search
+  module:
+    - taxonomy
+    - commerce_product
+    - search_api
+id: products
+name: Products
+description: ''
+read_only: false
+field_settings:
+  brand_label:
+    label: 'Brand Name'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'field_brand:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_brand
+      module:
+        - taxonomy
+  brands:
+    label: 'Brands for facet'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'field_brand:entity:tid'
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_brand
+      module:
+        - taxonomy
+  categories:
+    label: 'Categories for facet'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'field_product_categories:entity:tid'
+    type: string
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_product_categories
+      module:
+        - taxonomy
+  category_label:
+    label: 'Category Name'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'field_product_categories:entity:name'
+    type: text
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_product_categories
+      module:
+        - taxonomy
+  field_image:
+    label: Image
+    datasource_id: 'entity:commerce_product'
+    property_path: field_image
+    type: integer
+    dependencies:
+      config:
+        - field.storage.commerce_product.field_image
+  list_price:
+    label: 'List price'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:list_price:number'
+    type: string
+    dependencies:
+      module:
+        - commerce_product
+  list_price_cc:
+    label: 'List price Currency code'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:list_price:currency_code'
+    type: string
+    dependencies:
+      module:
+        - commerce_product
+  price:
+    label: Price
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:price:number'
+    type: string
+    dependencies:
+      module:
+        - commerce_product
+  price_cc:
+    label: 'Price Currency code'
+    datasource_id: 'entity:commerce_product'
+    property_path: 'variations:entity:price:currency_code'
+    type: string
+    dependencies:
+      module:
+        - commerce_product
+  product_name:
+    label: 'Product Name'
+    datasource_id: 'entity:commerce_product'
+    property_path: title
+    type: text
+    dependencies:
+      module:
+        - commerce_product
+  url:
+    label: URI
+    property_path: search_api_url
+    type: string
+    configuration:
+      absolute: true
+datasource_settings:
+  'entity:commerce_product':
+    bundles:
+      default: false
+      selected:
+        - default
+    languages:
+      default: false
+      selected:
+        - en-gb
+processor_settings:
+  add_url: {  }
+  aggregated_field: {  }
+  custom_value: {  }
+  entity_type: {  }
+  language_with_fallback: {  }
+  rendered_item: {  }
+tracker_settings:
+  default:
+    indexing_order: fifo
+options:
+  cron_limit: 50
+  index_directly: true
+  track_changes_in_references: true
+server: database_search

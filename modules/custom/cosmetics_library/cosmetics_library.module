@@ -7,18 +7,18 @@
  /**
   * Implements hook_page_attachments().
   */
-function cosmetics_library_page_attachments(array &$attachments) {
-  $current_path = \Drupal::service('path.current')->getPath();
-  $allowed_paths = [
-    '/node',
-    '/user/login',
+// function cosmetics_library_page_attachments(array &$attachments) {
+//   $current_path = \Drupal::service('path.current')->getPath();
+//   $allowed_paths = [
+//     '/node',
+//     '/user/login',
 
-  ];
+//   ];
 
-  if (\Drupal::currentUser()->isAnonymous()) {
-    if (!in_array($current_path, $allowed_paths)) {
-      print "<h1>Page under construction..</h1>";
-      exit;
-    }
-  }
-}
+//   if (\Drupal::currentUser()->isAnonymous()) {
+//     if (!in_array($current_path, $allowed_paths)) {
+//       print "<h1>Page under construction..</h1>";
+//       exit;
+//     }
+//   }
+// }

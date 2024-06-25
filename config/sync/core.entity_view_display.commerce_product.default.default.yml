@@ -70,7 +70,9 @@ content:
     weight: 1
     region: content
 hidden:
+  add_to_cart_link: true
   created: true
   langcode: true
+  search_api_excerpt: true
   stores: true
   uid: true
